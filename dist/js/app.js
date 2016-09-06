@@ -246,14 +246,14 @@ function _init() {
    */
   $.AdminLTE.layout = {
     activate: function () {
-      var _this = this;
-      _this.fix();
-      _this.fixSidebar();
-      $('body, html, .wrapper').css('height', 'auto');
-      $(window, ".wrapper").resize(function () {
-        _this.fix();
-        _this.fixSidebar();
-      });
+      // disable since Ember apps use vcalc instead
+      // var _this = this;
+      // _this.fix();
+      // _this.fixSidebar();
+      // $(window, ".wrapper").resize(function () {
+      //   _this.fix();
+      //   _this.fixSidebar();
+      // });
     },
     fix: function () {
       // Remove overflow from .wrapper if layout-boxed exists
