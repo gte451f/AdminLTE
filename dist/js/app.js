@@ -239,13 +239,14 @@ function _init() {
    */
   $.AdminLTE.layout = {
     activate: function () {
-      var _this = this;
-      _this.fix();
-      _this.fixSidebar();
-      $(window, ".wrapper").resize(function () {
-        _this.fix();
-        _this.fixSidebar();
-      });
+      // disable since Ember apps use vcalc instead
+      // var _this = this;
+      // _this.fix();
+      // _this.fixSidebar();
+      // $(window, ".wrapper").resize(function () {
+      //   _this.fix();
+      //   _this.fixSidebar();
+      // });
     },
     fix: function () {
       //Get window height and the wrapper height
